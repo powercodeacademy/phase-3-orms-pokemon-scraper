@@ -26,24 +26,16 @@ job is to build out the methods to save and find pokemon in the database.
 
 Our `Pokemon` class can be found in `lib/pokemon.rb`.
 This is where you will build your methods.
-Notice that #initialize requires [keyword arguments][].  
-
-[keyword arguments]: http://stackoverflow.com/questions/15062570/when-to-use-keyword-arguments-aka-named-parameters-in-ruby
+Notice that #initialize requires [keyword arguments](http://stackoverflow.com/questions/15062570/when-to-use-keyword-arguments-aka-named-parameters-in-ruby).
 
 ### A Note On Inserting Into the Database
 
 When you use SQL to insert into a database you write out the values by hand and
 insert them into the database.  However, when you insert your Pokémon into the
 database you don't want to insert them into the query via string interpolation
-because of potential [dangerous consequences][]. Instead, we can do two things:
+because of potential [dangerous consequences](http://xkcd.com/327/). Instead, we can do two things:
 
-- We can [sanitize][] the data by removing non-alphanumeric characters
-- We can [parameterize][] the query
+- We can [sanitize](https://www.quora.com/What-exactly-is-data-sanitization-with-respect-to-SQL-injection) the data by removing non-alphanumeric characters
+- We can [parameterize](https://stackoverflow.com/questions/4712037/what-is-parameterized-query) the query
 
-It is generally recommended to go with parameters. Check out this [Stack Overflow
-question][] for a good example.
-
-[dangerous consequences]: http://xkcd.com/327/
-[sanitize]: https://www.quora.com/What-exactly-is-data-sanitization-with-respect-to-SQL-injection
-[parameterize]: https://stackoverflow.com/questions/4712037/what-is-parameterized-query
-[Stack Overflow question]: http://stackoverflow.com/questions/13462112/inserting-ruby-string-into-sqlite
+It is generally recommended to go with parameters. Check out this [Stack Overflow question](http://stackoverflow.com/questions/13462112/inserting-ruby-string-into-sqlite) for a good example.
