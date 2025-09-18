@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 
+ruby "3.3.5"
 
 # Scraping
 gem 'nokogiri'
@@ -14,3 +15,6 @@ gem 'rspec', '>= 3.0'
 gem 'pry'
 
 gem 'rubocop'
+gem 'ostruct'
+gem 'fiddle'
+gem 'logger'
